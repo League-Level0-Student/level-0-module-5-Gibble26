@@ -2,18 +2,14 @@ package _02_fibonacci;
 
 public class thegoldenspin {
 public static void main(String[] args) {
-	int johnny = 4;
-	int gyro = 1;
-	int funnyValentine = 0; 
-	
-	funnyValentine = gyro + johnny;
-	gyro = funnyValentine;
-	johnny = funnyValentine;
-	System.out.println(gyro);
-	
-	for (int i = 0; i < args.length; i++) {
-		
-	}
-	
+	int next=0;
+	int fl=0;
+	int sl=1;
+	for (int i = 0; i < 12; i++) {
+		System.out.println(fl);
+		next=fl+sl;
+		fl=sl;
+		sl=next;
+}
 }
 }
