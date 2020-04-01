@@ -42,18 +42,17 @@ if(intA == 3) {
 else {
 	JOptionPane.showMessageDialog(null, "Wrong! I'll let it slide this time.");
 }
-for (int i = 0; i < pi.length(); i++) {
+for (int i = 1; i < pi.length(); i++) {
 	pi.charAt(i);
 	String b = JOptionPane.showInputDialog("What's the next digit of Pi?");
-	int intB = Integer.parseInt(b);
-	if(intB == pi.charAt(1)) {
+	if(b.charAt(0) == pi.charAt(i)) {
 		JOptionPane.showMessageDialog(null, "Good!");
 	}
 	else {
+		JOptionPane.showMessageDialog(null, "WRONG!");
 		break;
-		}
+	}
 	
-}
 				// 5. Ask the user for the NEXT digit of pi.
 
 				// 6. Compare the user's input to the next digit of your pi variable 
@@ -63,7 +62,9 @@ for (int i = 0; i < pi.length(); i++) {
 					// 7. If they are correct, print out "correct".
 
 					// 8. If they are not, print out "incorrect" and tell them
-}	
+}
+
+}
 }//    to start over. Use 'break;' to break out of the loop.
 
 
